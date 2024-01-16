@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: WooCommerce Checkout Custom Order
+ * Plugin Name: Fake Email Generator - By Wasapbot MY
  * Plugin URI: https://ahmadsyauqi.com
- * Description: Customize WooCommerce checkout order fields and meta data when an order is placed
- * Version: 0.0.1
+ * Description: Generate dummy email for each client if customer did not put their email in checkout form
+ * Version: 0.0.2
  * Author: Ahmad Syauqi
  * Author URI: https://ahmadsyauqi.com
- * Text Domain: wc-checkout-custom-order
+ * Text Domain: wc-fake-email-generator
  * Requires PHP: 7.1
  * Requires at least: 4.0
  * WC requires at least: 1.0

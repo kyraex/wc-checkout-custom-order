@@ -1,13 +1,12 @@
-# wc-checkout-custom-order
+# wc-fake-email-generator
 
 ## Description
 
-This plugin allows you to customize the checkout fields and its meta data for placed orders. It can be a hassle to manually add the same information for each order, so this plugin will automatically add the information for you. You can also customize meta data for each order, which can be useful for tracking purposes (In Development).
+This plugin allows you to generate dummy email for `billing_email` when user did not enter any email during checkout. This is useful when you want to create order for customer who did not have email address.
 
 ## Features
 
 * Auto generate custom `billing_email` if its empty | Format: `{billing.email}.customer@gmail.com`
-* ... more to come
 
 ## Installation
 
