@@ -23,11 +23,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Checkout_Custom_Order_WooCommerce {
 
     public function __construct() {
-        add_action( 'woocommerce_checkout_process', array( $this, 'custom_checkout_field_process' ) );
+        add_action( 'woocommerce_checkout_process', array( $this, 'custom_checkout_field_process' ), 10 );
         add_action( 'before_woocommerce_init', [$this, 'declare_hpos_compatibility'] );
     }
 
     public function custom_checkout_field_process() {
+
         // Check if the billing email is empty
         if ( empty( $_POST['billing_email'] ) ) {
 
@@ -36,6 +37,9 @@ class Checkout_Custom_Order_WooCommerce {
             if ( !empty( $_POST['billing_phone'] ) ) {
                 $phone_number = $_POST['billing_phone'];
             }
+
+            // Remove any non-numeric characters
+            $phone_number = preg_replace( '/[^0-9]/', '', $phone_number );
 
             // Create the dummy email
             $dummy_email = $phone_number . '.customer@gmail.com';

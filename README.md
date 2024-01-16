@@ -6,7 +6,7 @@ This plugin allows you to customize the checkout fields and its meta data for pl
 
 ## Features
 
-* Auto generate custom `billing_email` if its empty | Format: `billing.email`.customer@gmail.com
+* Auto generate custom `billing_email` if its empty | Format: `{billing.email}.customer@gmail.com`
 * ... more to come
 
 ## Installation
